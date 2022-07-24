@@ -18,7 +18,7 @@ class Forca {
         if (chute == letrasChutadas[i]) return;
       }
 
-      letrasChutadas.push(chute); // 5. Toda chamada ao método chutar deve registrar a letra em letrasChutadas
+      letrasChutadas.push(chute); //  Toda chamada ao método chutar deve registrar a letra em letrasChutadas
 
       this.palavra = this.mostraLetraCorreta(chute); 
 
