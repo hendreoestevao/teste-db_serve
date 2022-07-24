@@ -20,7 +20,7 @@ class Forca {
 
       letrasChutadas.push(chute); // 5. Toda chamada ao método chutar deve registrar a letra em letrasChutadas
 
-      this.palavra = this.mostraLetraCorreta(chute); // regra 7 OK.
+      this.palavra = this.mostraLetraCorreta(chute); 
 
       const caracteres = this.caracteres;
 
