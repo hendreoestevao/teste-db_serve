@@ -1,7 +1,7 @@
 class Forca {
 
   constructor(palavra) {
-    this.palavraSecreta = palavra.toLowerCase(); //para garantir que o jogo não será case sensitive
+    this.palavraSecreta = palavra.toLowerCase(); 
     this.caracteres = this.palavraSecreta.split("");
     this.acertos = [];
     this.letrasChutadas = [];
@@ -10,7 +10,7 @@ class Forca {
   }
 
   chutar(letra) {
-    if (/[a-zA-Z]/.test(letra) && letra.length == 1) { //garantindo que o chute só será aceito caso seja apenas uma letra (regra 3)
+    if (/[a-zA-Z]/.test(letra) && letra.length == 1) { 
       const chute = letra.toLowerCase();
       const letrasChutadas = this.letrasChutadas;
 
@@ -24,7 +24,7 @@ class Forca {
 
       const caracteres = this.caracteres;
 
-      if (caracteres.indexOf(chute) < 0) this.vidas -= 1; // regra 6 OK.
+      if (caracteres.indexOf(chute) < 0) this.vidas -= 1; 
     }
   }
 
